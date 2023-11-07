@@ -84,8 +84,7 @@ FitnessWorkout is a fitness and exercise app designed to help users plan and tra
 
 ## Wireframes
 
-
-
+<img src="ios101-capstone/Assets.xcassets/week8.imageset/week8.png" width=600>
 ## Schema
 
 ### Models
