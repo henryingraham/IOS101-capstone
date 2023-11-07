@@ -1,50 +1,128 @@
-# FitnessWorkout App
-
-
-## Description
-
-The FitnessWorkout App is a versatile fitness and exercise application designed to help users plan, track, and customize their workout routines. Whether you're a seasoned athlete or just starting your fitness journey, this app provides a variety of features to support your fitness goals.
-
-With FitnessWorkout, you can:
-- Generate random workout routines based on your preferences.
-- Customize and tailor workouts to fit your specific needs.
-- Save, organize, and name your favorite workout routines for easy access.
-- Track your fitness progress and monitor your performance.
-- Access a wide range of exercise demonstrations and video tutorials.
-- Share your workouts and achievements with friends and fellow fitness enthusiasts.
-- Receive notifications and reminders to stay consistent with your fitness routine.
-
-FitnessWorkout provides a comprehensive fitness experience, helping you stay motivated, achieve your goals, and maintain a healthy and active lifestyle.
+# FitnessWorkout
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Customization](#customization)
-- [Contributing](#contributing)
-- [License](#license)
+1. [Overview](#Overview)
+2. [Product Spec](#Product-Spec)
+3. [Wireframes](#Wireframes)
+4. [Schema](#Schema)
 
-## Installation
+## Overview
 
-To use FitnessWorkout, follow these steps:
+### Description
 
-TODO
+FitnessWorkout is a fitness and exercise app designed to help users plan and track their workout routines. Whether you're a beginner or an experienced fitness enthusiast, this app provides features to support your fitness journey.
 
-## Usage
+### App Evaluation
 
-FitnessWorkout is designed for easy navigation and user-friendliness. Here's how to use the app:
+- **Category:** Health & Fitness
+- **Mobile:** This app is primarily for mobile devices, providing users with workout plans on the go.
+- **Story:** FitnessWorkout aims to make it easy for users to access and customize workout plans to meet their fitness goals.
+- **Market:** The target market for this app is anyone interested in improving their fitness and tracking their progress.
+- **Habit:** Users can create daily or weekly workout routines, and the app encourages regular exercise.
+- **Scope:** Initially, the app will focus on generating random workouts, allowing customization, and tracking progress. It may expand to include additional features in the future.
 
-1. **Home Screen**: The main screen displays workout suggestions. You can generate random workouts by clicking "Get Workout."
+## Product Spec
 
-2. **Customization**: Click on "Customize Workout" to modify exercises, repetitions, sets, and rest intervals to fit your needs.
+### 1. User Stories (Required and Optional)
 
-3. **Saved Routines**: Save your favorite routines with custom names for easy access later.
+**Required Must-have Stories**
 
-4. **Progress Tracking**: Use the "Track Progress" feature to log completed workouts and monitor your fitness journey.
+- [x] Users can create an account and log in.
+- [x] Users can generate a random workout routine.
+- [x] Users can customize and save workout routines.
+- [ ] Users can track their workout progress.
+- [ ] Users can view exercise demonstrations.
 
-5. **Exercise Library**: Access a comprehensive exercise library with videos to ensure you're performing exercises correctly.
+**Optional Nice-to-have Stories**
 
-6. **Share and Motivate**: Share your workouts and progress with friends and motivate each other.
+- [ ] Users can share their workout routines on social media.
+- [ ] Users can receive workout reminders.
+- [ ] Users can set fitness goals and receive recommendations.
+
+### 2. Screen Archetypes
+
+- [ ] Login
+- [ ] Register
+- [ ] Home (Workout Generation)
+- [ ] Workout Customization
+- [ ] Saved Routines
+- [ ] Progress Tracking
+- [ ] Exercise Library
+- [ ] Social Sharing
+- [ ] Notifications
+- [ ] Settings
+
+### 3. Navigation
+
+**Tab Navigation** (Tab to Screen)
+
+- Home
+- Saved Routines
+- Progress Tracking
+
+**Flow Navigation** (Screen to Screen)
+
+- Login
+  - Home
+- Register
+  - Home
+- Home (Workout Generation)
+  - Workout Customization
+  - Exercise Library
+  - Social Sharing
+- Workout Customization
+  - Saved Routines
+- Saved Routines
+  - Workout Customization
+- Progress Tracking
+  - Home
+- Exercise Library
+  - Exercise Details
+- Social Sharing
+  - Home
+
+## Wireframes
+
+
+
+## Schema
+
+### Models
+
+- User
+  - Username
+  - Password
+  - Email
+  - Profile Picture
+- Workout
+  - Title
+  - Description
+  - Exercises
+  - User (relationship)
+- Exercise
+  - Name
+  - Description
+  - Video Demo URL
+
+### Networking
+
+- Home Screen
+  - Query for a random workout from the server.
+- Workout Customization
+  - Create and save a new workout on the server.
+- Saved Routines
+  - Query user-specific workout routines from the server.
+- Progress Tracking
+  - Log completed workouts and store data on the server.
+- Exercise Library
+  - Query and display a list of exercises with video URLs.
+- Social Sharing
+  - Share workout routines and achievements on social media.
+- Notifications
+  - Set and manage workout reminders.
+- Settings
+  - Update user profile information.
 
 ## License
 
